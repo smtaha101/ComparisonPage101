@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <section class="main">
+        <div class="box">
+            <select id="first" onchange="selectProduct1()">
+                <option value="">Select any Product</option>
+                <option value="val1">Infinix Hot 10</option>
+                <option value="val2">Infinix Hot 9</optoion>
+                <option value="val3">Infinix Hot 8</option>
+            </select>
+            <div class="product-1" id="product1">
+                <h2 class="price" id="price">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model">Model Name</h2></li>
+                    <li><h2 class="size" id="size">Screen Size</h2></li>
+                    <li><h2 class="ram" id="ram">ram</h2></li>
+                    <li><h2 class="rom" id="rom">rom</h2></li>
+                    <li><h2 class="sim" id="sim">sim</h2></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <select id="second" onchange="selectProduct2()">
+                <option value="">Select any Product</option>
+                <option value="val1">Iphone 7</option>
+                <option value="val2">Iphone 8</option>
+                <option value="val3">Iphone 10</option>
+            </select>
+            <div class="product-2" id="product2">
+                <h2 class="price" id="price1">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model1">Model Name</h2></li>
+                    <li><h2 class="size" id="size1">Screen Size</h2></li>
+                    <li><h2 class="ram" id="ram1">ram</h2></li>
+                    <li><h2 class="rom" id="rom1">rom</h2></li>
+                    <li><h2 class="sim" id="rom1">sim</h2></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <select id="third" onchange="selectProduct3()">
+                <option value="">Select any Product</option>
+                <option value="val1">Samsung S8</option>
+                <option value="val2">Samsung S9</option>
+                <option value="val3">Samsung 10</option>
+            </select>
+            <div class="product-3" id="product3">
+                <h2 class="price" id="price2">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model2">Model Name</h2></li>
+                    <li><h2 class="size" id="size2">Screen Size</h2></li>
+                    <li><h2 class="ram" id="ram2">ram</h2></li>
+                    <li><h2 class="rom" id="rom2">rom</h2></li>
+                    <li><h2 class="sim" id="sim2">sim</h2></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function selectProduct1()
+        {
+
+            document.getElementById("product1").style.opacity = 1;
+
+            var product = document.getElementById("first").value;
+            if(product=="val1")
+            {
+                document.getElementById("price").innerHTML="250$";
+                document.getElementById("model").innerHTML="Model : Infinix Hot 10";
+                document.getElementById("size").innerHTML="Screen : 6 inches";
+                document.getElementById("ram").innerHTML="RAM : 6 GB";
+                document.getElementById("rom").innerHTML="ROM : 128 GB";
+                document.getElementById("sim").innerHTML="SIM : Dual Sim";
+                
+            }
+            else if(product=="val2")
+            {
+                document.getElementById("price").innerHTML="220$";
+                document.getElementById("model").innerHTML="Model : Infinix Hot 9";
+                document.getElementById("size").innerHTML="Screen : 5.5 inches";
+                document.getElementById("ram").innerHTML="RAM : 4 GB";
+                document.getElementById("rom").innerHTML="ROM : 64 GB";
+                document.getElementById("sim").innerHTML="SIM : Dual Sim";
+            }
+            else if(product=="val3")
+            {
+                document.getElementById("price").innerHTML="200$";
+                document.getElementById("model").innerHTML="Model : Infinix Hot 8";
+                document.getElementById("size").innerHTML="Screen : 5 inches";
+                document.getElementById("ram").innerHTML="RAM : 2 GB";
+                document.getElementById("rom").innerHTML="ROM : 32 GB";
+                document.getElementById("sim").innerHTML="SIM : Single Sim";
+            }
+            else 
+            {
+                document.getElementById("product1").style.opacity = 0;
+            }
+        }
+
+
+        function selectProduct2()
+        {
+
+            document.getElementById("product2").style.opacity = 1;
+
+            var product = document.getElementById("second").value;
+            if(product=="val1")
+            {
+                document.getElementById("price1").innerHTML="350$";
+                document.getElementById("model1").innerHTML="Model : iphone 7";
+                document.getElementById("size1").innerHTML="Screen : 5 inches";
+                document.getElementById("ram1").innerHTML="RAM : 4 GB";
+                document.getElementById("rom1").innerHTML="ROM : 128 GB";
+                document.getElementById("sim1").innerHTML="SIM : Single Sim";
+                
+            }
+            else if(product=="val2")
+            {
+                document.getElementById("price1").innerHTML="400$";
+                document.getElementById("model1").innerHTML="Model : iphone 8";
+                document.getElementById("size1").innerHTML="Screen : 5.5 inches";
+                document.getElementById("ram1").innerHTML="RAM : 4 GB";
+                document.getElementById("rom1").innerHTML="ROM : 64 GB";
+                document.getElementById("sim1").innerHTML="SIM : single Sim";
+            }
+            else if(product=="val3")
+            {
+                document.getElementById("price1").innerHTML="500$";
+                document.getElementById("model1").innerHTML="Model : iphone 10";
+                document.getElementById("size1").innerHTML="Screen : 5.5 inches";
+                document.getElementById("ram1").innerHTML="RAM : 6 GB";
+                document.getElementById("rom1").innerHTML="ROM : 256 GB";
+                document.getElementById("sim1").innerHTML="SIM : single Sim";
+            }
+            else 
+            {
+                document.getElementById("product2").style.opacity = 0;
+            }
+        }
+
+        function selectProduct3()
+        {
+
+            document.getElementById("product3").style.opacity = 1;
+
+            var product = document.getElementById("third").value;
+            if(product=="val1")
+            {
+                document.getElementById("price2").innerHTML="350$";
+                document.getElementById("model2").innerHTML="Model : Samsung S8";
+                document.getElementById("size2").innerHTML="Screen : 5 inches";
+                document.getElementById("ram2").innerHTML="RAM : 4 GB";
+                document.getElementById("rom2").innerHTML="ROM : 128 GB";
+                document.getElementById("sim2").innerHTML="SIM : Single Sim";
+                
+            }
+            else if(product=="val2")
+            {
+                document.getElementById("price2").innerHTML="400$";
+                document.getElementById("model2").innerHTML="Model : Samsung S9";
+                document.getElementById("size2").innerHTML="Screen : 5.5 inches";
+                document.getElementById("ram2").innerHTML="RAM : 4 GB";
+                document.getElementById("rom2").innerHTML="ROM : 64 GB";
+                document.getElementById("sim2").innerHTML="SIM : Dual Sim";
+            }
+            else if(product=="val3")
+            {
+                document.getElementById("price2").innerHTML="500$";
+                document.getElementById("model2").innerHTML="Model : Samsung S10";
+                document.getElementById("size2").innerHTML="Screen : 5.5 inches";
+                document.getElementById("ram2").innerHTML="RAM : 6 GB";
+                document.getElementById("rom2").innerHTML="ROM : 256 GB";
+                document.getElementById("sim2").innerHTML="SIM : Dual Sim";
+            }
+            else 
+            {
+                document.getElementById("product3").style.opacity = 0;
+            }
+        }
+    </script>
+
+</body>
+</html>
